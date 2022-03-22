@@ -29,7 +29,7 @@ public class TestRandom {
 
     @Test
     public void isPrime() {
-        assertTrue("Random digit is Prime", primes.indexOf((int)RandomCharacter.getRandomDigitCharacter()) >= 0);
+        assertTrue("Random digit is Prime", primes.indexOf((int)RandomCharacter.getPrimeChracter()) >= 0);
     }
 
     

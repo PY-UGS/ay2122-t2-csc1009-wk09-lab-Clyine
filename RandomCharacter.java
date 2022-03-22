@@ -3,6 +3,7 @@ import java.util.Random;
 public final class RandomCharacter {
     private static final Random r = new Random();
     private static final String set = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    private static final String primes = "2357";
 
     public static char getRandomLowerCaseLetter(){
         return (char)(r.nextInt(26)+97);
@@ -18,5 +19,9 @@ public final class RandomCharacter {
 
     public static char getRandomCharacter(){
         return (char)(set.charAt(r.nextInt(set.length())));
+    }
+
+    public static char getPrimeChracter() {
+        return (char)(primes.charAt(r.nextInt(primes.length())));
     }
 }
