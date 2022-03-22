@@ -24,7 +24,7 @@ public class TestRandom {
 
     @Test
     public void getRandomChar() {
-        assertTrue("Random lowver case is correct",set.indexOf((int)RandomCharacter.getRandomLowerCaseLetter()) >= 0);
+        assertTrue("Random character case is correct",set.indexOf((int)RandomCharacter.getRandomLowerCaseLetter()) >= 0);
     }
 
     @Test
